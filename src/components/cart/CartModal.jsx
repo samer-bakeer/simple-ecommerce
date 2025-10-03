@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const CartModal = ({ cart, onUpdateQuantity, isOpen, onClose }) => {
+const CartModal = ({ cart, onUpdateQuantity, isOpen, onClose, onCheckout }) => {
   if (!isOpen) return null;
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
