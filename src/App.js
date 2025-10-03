@@ -61,10 +61,7 @@ function AppContent({ cart, setCart, isCartOpen, setIsCartOpen }) {
         onClose={() => setIsCartOpen(false)}
         cart={cart}
         onUpdateQuantity={updateQuantity}
-        onCheckout={() => {
-          setCart([]); 
-          setIsCartOpen(false);
-        }}
+        onCheckout={() => setCart([])} 
       />
     </>
   );
