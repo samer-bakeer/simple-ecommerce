@@ -11,7 +11,7 @@ const ProductCard = ({ product, onAddToCart }) => {
         loading="lazy"
       />
       <div className="p-4">
-        <h3 className="font-bold text-lg text-gray-800 truncate">{product.name}</h3>
+        <h3 className="font-bold text-lg text-gray-800 truncate text-gray-800 dark:text-white">{product.name}</h3>
         <p className="text-xl font-semibold text-blue-600 mt-2">${product.price}</p>
         <button
           onClick={() => onAddToCart(product)}
